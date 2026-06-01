@@ -1,0 +1,11 @@
+# Storage Solution For Homelab
+
+Problem: Laptop for the lab only has 256GB of storage which is not ideal for the virtual environments I want to set up.
+I will be converting my old gaming desktop into a TrueNAS server which will keep my laptop lightweight and fast.
+
+Laptop: AMD Ryzen 5 6600H, 24GB RAM, 256GB NVMe SSD
+Desktop 1.8TB HDD
+
+1. Flash TrueNAS ISO onto flashdrive using Etcher (https://etcher.balena.io/#download-etcher)
+2. Boot desktop from flashdrive
+3. Configure
