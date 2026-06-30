@@ -24,6 +24,15 @@ Storage solution is setup.
 I have additionally connected my VMs to my trueNAS server. They run local on the proxmox server to optimize speed, but use the NAS server as additional storage
 
 
-*Issues
+## Issue: Power Outage Recovery
   TrueNAS server was powered off due to an outage. After powering back on, the web interface remained offline and the IP address was not responding to pings. After connecting a monitor to the server,
   I found that there was an issue during boot and it presented a blank screen w a blinking cursor.
+
+  During recovery troubleshooting, a bad USB drive was plugged into the system, which caused overheating and a kernal panic, corrupting the OS installation on the boot USB.
+
+  After seeing kernel panic, I figured the best desicion would be to reflash the USB and hope that some configuration was saved on the HDD.
+  The install was clean and data and pool configuration was preserved.
+
+### Lesson Learned
+  As cited earlier in this document, using a USB as a boot drive creates a single point of failure. A small SSD would be more reliable. This is currently a known and documented limitation of the current homelab setup.
+  
