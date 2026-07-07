@@ -35,4 +35,6 @@ I have additionally connected my VMs to my trueNAS server. They run local on the
 
 ### Lesson Learned
   As cited earlier in this document, using a USB as a boot drive creates a single point of failure. A small SSD would be more reliable. This is currently a known and documented limitation of the current homelab setup.
+
+Lastly, to ensure that the server will always power back on after an outage and boot correctly, I went into BIOS on the server and enabled "AC Back" to "always on". Previously, the boot order was incorrect. I selected the boot drive as the #1 option. I simulated an outage and watched it turn back on with no issues or user input required.
   
