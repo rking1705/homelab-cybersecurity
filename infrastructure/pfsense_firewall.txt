@@ -1,4 +1,0 @@
-After creating a Pfsense VM in Proxmox, I found that no link up bridge was connected and a second network interface seperate is required.
-To fix this, I visited my Proxmox VE -> Hardware -> Add a network device.
-
-
