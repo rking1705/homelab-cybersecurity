@@ -15,7 +15,7 @@ pfSense requires two virtual NICs in Proxmox:
   
 
 After creating a pfSense VM in Proxmox, the interface assignment wizard failed repeatedly with an error message 'no link detected'.
-The VM only had one network card while Proxmox requires at least 2. To fix this I added a second virtual NIC (vtnet0) through Proxmox:
+The VM only had one network card while pfSense requires at least 2. To fix this I added a second virtual NIC (vtnet0) through Proxmox:
 VM -> Hardware -> Add -> Network Device
 
 <img width="599" height="187" alt="image" src="https://github.com/user-attachments/assets/df81abde-97a9-4afd-a6c7-c2c615c90722" />
@@ -39,7 +39,7 @@ After configuring VLANs, the pfSense web UI timed out and became unreachable bec
 To fix this I went into the pfSense VM terminal and entered 'pfctl -d' to temporarily disable the firewall so I could add a WAN firewall rule allowing HTTPS access the the WAN address.
 Upon reboot all firewall rules were active, while I maintained access to the web UI.
 
-Here are the firewall rules:
+Firewall rules w/ descriptions:
 <img width="1221" height="318" alt="image" src="https://github.com/user-attachments/assets/5f9730a7-ce69-4de0-9ba4-e9ffd11fd6eb" />
 
 
@@ -49,6 +49,7 @@ Here are the firewall rules:
   - In a proper setup, the management device would already sit on the management VLAN (10.10.10.X) to access the web UI through LAN rather than WAN. I ran into the issue with losing access to the web UI because all of the physical devices in my setup are on the home network.
   - I learned that 2 NICs are required for pfSense (WAN and LAN), and how to add a new virtual NIC.
   - Implementing rules that protect devices, while still providing functionality
+  - Wazuh and future management tools need to be moved to the management VLAN 
 
 
 
