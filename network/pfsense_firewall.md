@@ -45,7 +45,7 @@ Firewall rules w/ descriptions:
 
 
 ## Lessons Learned
-  - In order for DHCP server to work, I learned that the subnets must be large enough for the range of IP addresses. LAN, OPT2, and OPT3 subnets are now all set to /24.
+  - In order for DHCP server to work, I learned that the subnets must be large enough for the range of IP addresses. LAN, OPT2, and OPT3 subnets are now all set to /24 (254 hosts).
   - In a proper setup, the management device would already sit on the management VLAN (10.10.10.X) to access the web UI through LAN rather than WAN. I ran into the issue with losing access to the web UI because all of the physical devices in my setup are on the home network.
   - I learned that 2 NICs are required for pfSense (WAN and LAN), and how to add a new virtual NIC.
   - Implementing rules that protect devices, while still providing functionality
