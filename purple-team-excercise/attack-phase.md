@@ -16,6 +16,15 @@ OS discovery - Linux 2.6.9 - 2.6.33
 Hosts: metasploitable.localdomain, irc.Metasploitable.LAN
 Services found:
 1. Port 21 - FTP | version: vsdtpd 2.3.4
+   - File transfer protocol
+   - This specific version contains a malicious backdoor (CVE-2011-2523)
+   - Allows unauthenticated users to execute arbitrary commands w/ root privileges.
+   - If user logins in with any username ending with ":)" and any password, they get root access on the system.
+   - Use netcat to connect to port 21 and sign in.
+   - Spawn a different instance of netcat to access backdoor on port 6200
+   - Exploit successful - root access gained
+   <img width="1568" height="418" alt="image" src="https://github.com/user-attachments/assets/de8d666e-5b4a-4862-bc72-ac60ee14027d" />
+
 2. Port 22 - SSH | version: OpenSSH 4.71
 3. Port 23 - Telnet | version: Linux telnetd
 4. Port 25 - SMTP | version: Postfix smptd
