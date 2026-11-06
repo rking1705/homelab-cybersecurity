@@ -26,6 +26,9 @@ Services found:
    <img width="1568" height="418" alt="image" src="https://github.com/user-attachments/assets/de8d666e-5b4a-4862-bc72-ac60ee14027d" />
 
 2. Port 22 - SSH | version: OpenSSH 4.71
+   - Known outdated/vulnerable version of SSH
+   - CVE-2018-15473
+   - There is a python script available to enumerate usernames
 3. Port 23 - Telnet | version: Linux telnetd
 4. Port 25 - SMTP | version: Postfix smptd
 5. Port 53 - Domain | version: ISC BIND 9.4.2
