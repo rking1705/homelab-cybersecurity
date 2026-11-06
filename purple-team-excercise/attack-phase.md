@@ -30,6 +30,11 @@ Services found:
    - CVE-2018-15473
    - There is a python script available to enumerate usernames
 3. Port 23 - Telnet | version: Linux telnetd
+   - Outdated service
+   - Known exploit: CVE-2026-24061
+   - Successful, telnet access gained.
+   <img width="1124" height="780" alt="image" src="https://github.com/user-attachments/assets/5f124a90-0dcc-4944-9fc3-27666872001a" />
+
 4. Port 25 - SMTP | version: Postfix smptd
 5. Port 53 - Domain | version: ISC BIND 9.4.2
 6. Port 80 - HTTP | version: Apache httpd 2.2.8 ((Ubuntu DAV/2)
