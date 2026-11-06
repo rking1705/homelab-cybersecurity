@@ -28,15 +28,20 @@ Services found:
 2. Port 22 - SSH | version: OpenSSH 4.71
    - Known outdated/vulnerable version of SSH
    - CVE-2018-15473
-   - There is a python script available to enumerate usernames
+   - There is a python script available on github to enumerate usernames
 3. Port 23 - Telnet | version: Linux telnetd
    - Outdated service
    - Known exploit: CVE-2026-24061
    - Successful, telnet access gained.
+   - This works because of weak input validation, '-f' flag stands for force. So '-f root' force logins as root.
    <img width="1124" height="780" alt="image" src="https://github.com/user-attachments/assets/5f124a90-0dcc-4944-9fc3-27666872001a" />
 
 4. Port 25 - SMTP | version: Postfix smptd
+   - This version has a known exploit: CVE-2023-51764
+     
 5. Port 53 - Domain | version: ISC BIND 9.4.2
+   - Version 9.4 has known exploits and has been EoL since 2012. (No longer receives updates)
+   - 
 6. Port 80 - HTTP | version: Apache httpd 2.2.8 ((Ubuntu DAV/2)
 7. Port 111 - Rcpbind | version: 2 (RPC #100000)
 8. Port 139 - Netbios-ssn | version: Samba smbd 3.X - 4.X
