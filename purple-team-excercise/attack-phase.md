@@ -29,6 +29,8 @@ Services found:
    - Known outdated/vulnerable version of SSH
    - CVE-2018-15473
    - There is a python script available on github to enumerate usernames
+     <img width="1250" height="864" alt="image" src="https://github.com/user-attachments/assets/412c1693-c2ae-4289-b8bf-c12072db2ba8" />
+
 3. Port 23 - Telnet | version: Linux telnetd
    - Outdated service
    - Known exploit: CVE-2026-24061
