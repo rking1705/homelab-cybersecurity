@@ -46,6 +46,11 @@ Services found:
 7. Port 111 - Rcpbind | version: 2 (RPC #100000)
 8. Port 139 - Netbios-ssn | version: Samba smbd 3.X - 4.X
 9. Port 445 - Netbios-ssn | version: Samba smbd 3.0.20-Debian
+   - Vulnerable to CVE-2007-2447
+   - Remote Command Execution Attack
+   - Exploit available in msfconsole 'exploit/samba/username_script'
+   - <img width="1272" height="406" alt="image" src="https://github.com/user-attachments/assets/6c572a88-ad0a-4e81-abe9-a4290de93914" />
+
 10. Port 512 - Exec | version: netkit-rsh rexecd
 11. Port 2049 - NFS | version: 2-4 (RPC #100003)
 12. Port 2121 - FTP | version: ProFTPD 1.3.1
