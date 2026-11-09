@@ -64,6 +64,11 @@ Services found:
      <img width="1136" height="1272" alt="image" src="https://github.com/user-attachments/assets/6d315306-3355-4ca9-bccc-ca0803a4c464" />
 14. Port 3632 - Distccd | versiion: Distccd v1 ((GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4))
 15. Port 5432 - PostgreSQL | version: PostgreSQL DB 8.3.0 - 8.3.7
+   - Default credentials allowed access (postgres:postgres)
+    <img width="998" height="330" alt="image" src="https://github.com/user-attachments/assets/6c893b9e-c2af-486d-ad44-d28626557840" />
+   - Version allowed for shell access with '/inux/postgres/postgres_payload' on Metasploit.
+     <img width="2252" height="596" alt="image" src="https://github.com/user-attachments/assets/148fe38b-8a55-4b46-b8cd-d601a12353cc" />
+
 16. Port 5900 - VNC | version: VNC (protocol 3.3)
 17. Port 6667 - IRC | version: UnrealIRCd
 18. Port 8009 - AJP13 | version: Apache Jserv (Protocol v1.3)
