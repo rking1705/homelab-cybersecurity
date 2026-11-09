@@ -52,7 +52,7 @@ Services found:
    - Remote Command Execution Attack
    - Exploit available in msfconsole 'exploit/samba/username_script'
     <img width="1272" height="406" alt="image" src="https://github.com/user-attachments/assets/6c572a88-ad0a-4e81-abe9-a4290de93914" />
-    <img width="1136" height="1272" alt="image" src="https://github.com/user-attachments/assets/6d315306-3355-4ca9-bccc-ca0803a4c464" />
+    
 
 
 10. Port 512 - Exec | version: netkit-rsh rexecd
@@ -61,7 +61,7 @@ Services found:
 13. Port 3306 - MySQL | version: MySQL 5.0.51a-3ubuntu5
    - Weak authentication exploit
      <img width="1240" height="422" alt="image" src="https://github.com/user-attachments/assets/d94e5c71-1b69-4514-bbe4-5463745df0dd" />
-
+     <img width="1136" height="1272" alt="image" src="https://github.com/user-attachments/assets/6d315306-3355-4ca9-bccc-ca0803a4c464" />
 14. Port 3632 - Distccd | versiion: Distccd v1 ((GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4))
 15. Port 5432 - PostgreSQL | version: PostgreSQL DB 8.3.0 - 8.3.7
 16. Port 5900 - VNC | version: VNC (protocol 3.3)
